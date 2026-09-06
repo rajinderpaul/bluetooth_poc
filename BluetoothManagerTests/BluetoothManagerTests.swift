@@ -25,7 +25,7 @@ struct BluetoothManagerTests {
 		#expect(frame?.value == 1500.0)
 	}
 	
-	@Test("rejects a short packet")
+	@Test("rejects a short packet: CHECK IF THIS FOUND")
 	func rejectsShortPacket() {
 		let data = Data([0x01, 0x02, 0x03])   // only 3 bytes
 		#expect(TelemetryFrame(data) == nil)

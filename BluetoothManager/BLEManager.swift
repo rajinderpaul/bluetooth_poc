@@ -156,11 +156,11 @@ extension BLECentralManager: CBPeripheralDelegate {
 		
 		switch ch.uuid {
 			case GATT.telemetry:
-				let b = [UInt8](d); guard b.count >= 8 else { return }
-				latestSeq = UInt32(b[0]) | UInt32(b[1])<<8 | UInt32(b[2])<<16 | UInt32(b[3])<<24
-				let raw   = UInt32(b[4]) | UInt32(b[5])<<8 | UInt32(b[6])<<16 | UInt32(b[7])<<24
-				latestValue = Float(bitPattern: raw)
-
+			if let frame = TelemetryFrame(d) {
+				latestSeq = frame.seq
+				latestValue = frame.value
+			}
+			
 			case GATT.manufacturer:
 			deviceManufacturer = String(decoding: d, as: UTF8.self)
 			case GATT.modelNumber:

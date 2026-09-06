@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
+		B4551E25304D7DE4001B34DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4956309304C1D8900E5590F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4956310304C1D8900E5590F;
+			remoteInfo = BluetoothManager;
+		};
 		B495631F304C1D8B00E5590F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B4956309304C1D8900E5590F /* Project object */;
@@ -24,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B4551E21304D7DE4001B34DB /* BTManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4956311304C1D8900E5590F /* BluetoothManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B495631E304C1D8B00E5590F /* BluetoothManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4956328304C1D8B00E5590F /* BluetoothManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +48,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		B4551E22304D7DE4001B34DB /* BTManagerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BTManagerTests;
+			sourceTree = "<group>";
+		};
 		B4956313304C1D8900E5590F /* BluetoothManager */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -61,6 +74,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B4551E1E304D7DE4001B34DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B495630E304C1D8900E5590F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,6 +111,7 @@
 				B4956313304C1D8900E5590F /* BluetoothManager */,
 				B4956321304C1D8B00E5590F /* BluetoothManagerTests */,
 				B495632B304C1D8B00E5590F /* BluetoothManagerUITests */,
+				B4551E22304D7DE4001B34DB /* BTManagerTests */,
 				B4956312304C1D8900E5590F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +122,7 @@
 				B4956311304C1D8900E5590F /* BluetoothManager.app */,
 				B495631E304C1D8B00E5590F /* BluetoothManagerTests.xctest */,
 				B4956328304C1D8B00E5590F /* BluetoothManagerUITests.xctest */,
+				B4551E21304D7DE4001B34DB /* BTManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +130,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B4551E20304D7DE4001B34DB /* BTManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4551E27304D7DE4001B34DB /* Build configuration list for PBXNativeTarget "BTManagerTests" */;
+			buildPhases = (
+				B4551E1D304D7DE4001B34DB /* Sources */,
+				B4551E1E304D7DE4001B34DB /* Frameworks */,
+				B4551E1F304D7DE4001B34DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4551E26304D7DE4001B34DB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B4551E22304D7DE4001B34DB /* BTManagerTests */,
+			);
+			name = BTManagerTests;
+			packageProductDependencies = (
+			);
+			productName = BTManagerTests;
+			productReference = B4551E21304D7DE4001B34DB /* BTManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B4956310304C1D8900E5590F /* BluetoothManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4956332304C1D8B00E5590F /* Build configuration list for PBXNativeTarget "BluetoothManager" */;
@@ -186,6 +231,10 @@
 				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 2660;
 				TargetAttributes = {
+					B4551E20304D7DE4001B34DB = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = B4956310304C1D8900E5590F;
+					};
 					B4956310304C1D8900E5590F = {
 						CreatedOnToolsVersion = 26.6;
 					};
@@ -216,11 +265,19 @@
 				B4956310304C1D8900E5590F /* BluetoothManager */,
 				B495631D304C1D8B00E5590F /* BluetoothManagerTests */,
 				B4956327304C1D8B00E5590F /* BluetoothManagerUITests */,
+				B4551E20304D7DE4001B34DB /* BTManagerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B4551E1F304D7DE4001B34DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B495630F304C1D8900E5590F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +302,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B4551E1D304D7DE4001B34DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B495630D304C1D8900E5590F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +333,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B4551E26304D7DE4001B34DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4956310304C1D8900E5590F /* BluetoothManager */;
+			targetProxy = B4551E25304D7DE4001B34DB /* PBXContainerItemProxy */;
+		};
 		B4956320304C1D8B00E5590F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B4956310304C1D8900E5590F /* BluetoothManager */;
@@ -282,6 +351,48 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B4551E28304D7DE4001B34DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B42SP2K539;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajinder.BTManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BluetoothManager";
+			};
+			name = Debug;
+		};
+		B4551E29304D7DE4001B34DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B42SP2K539;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajinder.BTManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BluetoothManager";
+			};
+			name = Release;
+		};
 		B4956330304C1D8B00E5590F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -558,6 +669,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B4551E27304D7DE4001B34DB /* Build configuration list for PBXNativeTarget "BTManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4551E28304D7DE4001B34DB /* Debug */,
+				B4551E29304D7DE4001B34DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B495630C304C1D8900E5590F /* Build configuration list for PBXProject "BluetoothManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

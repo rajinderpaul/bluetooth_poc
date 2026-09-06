@@ -25,7 +25,7 @@ jobs:
           xcodebuild \
             -project BluetoothManager.xcodeproj \
             -scheme BluetoothManager \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -destination 'generic/platform=iOS Simulator' \
             -resultBundlePath TestResults.xcresult \
             clean test
 
